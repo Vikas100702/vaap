@@ -1,0 +1,2883 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<!--HTML START-->
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>home | VAAP Technologies</title>
+
+
+    <!--HEAD START-->
+
+    <!--::::: support meta :::::::-->
+
+    
+    <!--::::: ALL CSS CALLING :::::::-->
+    <link rel="stylesheet" href="https://vaaptech.com/assets/css/plugins/animate.min.css">
+    <link rel="stylesheet" href="https://vaaptech.com/assets/css/plugins/bootstrap.min.css">
+    <link rel="stylesheet" href="https://vaaptech.com/assets/css/plugins/fontawesome.css">
+    <link rel="stylesheet" href="https://vaaptech.com/assets/css/plugins/modal-video.min.css">
+    <link rel="stylesheet" href="https://vaaptech.com/assets/css/plugins/stellarnav.css">
+    <link rel="stylesheet" href="https://vaaptech.com/assets/css/plugins/owl.carousel.css">
+    <link rel="stylesheet" href="https://vaaptech.com/assets/css/typography.css">
+    <link rel="stylesheet" href="https://vaaptech.com/assets/plugins/venobox/venobox.css">
+
+    <link rel="stylesheet" href="https://vaaptech.com/assets/css/theme.css">
+    <link rel="stylesheet" href="https://vaaptech.com/assets/css/button.css">
+    <link rel="stylesheet" href="https://vaaptech.com/assets/css/inner.css">
+    <link rel="stylesheet" href="https://vaaptech.com/assets/css/style.css">
+    <link rel="stylesheet" href="https://vaaptech.com/assets/css/responsive.css">
+    <link rel="stylesheet" href="https://vaaptech.com/assets/css/animated-button.css">
+<link rel="shortcut icon" href="https://vaaptech.com/assets/img/logo/logo.png" type="image/x-icon">
+</head>
+<!--HEADE END-->
+
+
+
+
+</head>
+<body><!-- <header class="navigation fixed-top">
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <a class="navbar-brand" href="https://vaaptech.com/"><img src="https://vaaptech.com/front_assets/images/logo.png" alt="VAAP Technologies" height="70"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
+      aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse text-center" id="navigation">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="https://vaaptech.com/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="https://vaaptech.com/our-solutions">Our Solutions</a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link" href="https://vaaptech.com/about-vaap">About VAAP</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header> -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<style>
+
+    :root{
+        --web-theme: #07a092;
+    }
+    .navbarmneuclass li{
+        display: none!important;
+    }
+    @media only screen and (max-width:991px) {
+        .navbarmneuclass li{
+        display: block!important;
+        }
+    }
+
+    .header-area{
+        top: 0 !important;
+    }
+
+    /* Hamburger icon (visible on all screens) */
+.hamburger {
+    cursor: pointer;
+    width: 35px;
+    height: 30px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 6px;
+    transition: transform 0.3s ease;
+}
+
+.hamburger .line {
+    display: block;
+    height: 3px;
+    background-color: #fff;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+/* Different widths for staggered lines */
+.hamburger .line1 {
+    width: 100%;
+}
+.hamburger .line2 {
+    width: 75%;
+}
+.hamburger .line3 {
+    width: 50%;
+}
+
+/* Hover effect: grow lines slightly */
+.hamburger:hover .line1 {
+    width: 105%;
+}
+.hamburger:hover .line2 {
+    width: 80%;
+}
+.hamburger:hover .line3 {
+    width: 55%;
+}
+
+/* Animation when active (turn into X) */
+.hamburger.active .line1 {
+    transform: rotate(45deg) translate(5px, 5px);
+    width: 100%;
+}
+
+.hamburger.active .line2 {
+    opacity: 0;
+    transform: scale(0);
+}
+
+.hamburger.active .line3 {
+    transform: rotate(-45deg) translate(8px, -8px);
+    width: 100%;
+}
+
+
+/* Mobile Nav (Initially hidden — slides in from the right) */
+.mobile-nav {
+    position: fixed !important;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 100vh;
+    background-color: #211f24;
+    color: white;
+    list-style: none;
+    text-align: left;
+    transition: transform 0.35s ease-in-out, width 0.35s ease;
+    z-index: 9999;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    transform: translateX(100%); /* Hidden to the right */
+    box-shadow: -4px 0 12px rgba(0,0,0,0.4);
+}
+
+/* When active, the nav slides in from the right */
+.mobile-nav.active {
+    transform: translateX(0);
+    width: 25vw; /* visible width */
+}
+
+/* Styling for the nav links */
+.mobile-nav li {
+    margin: 0px;
+    width: 100%;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.mobile-nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;  /* Slightly smaller for side menu */
+    display: block;
+    width: 100%;
+    padding: 8px 12px;
+    border-radius: 4px;
+}
+
+.mobile-nav a:hover {
+  color: var(--web-theme);
+  background: rgba(255,255,255,0.03);
+}
+
+/* Close button inside the sliding nav */
+.mobile-close {
+        position: absolute;
+        top: 12px;
+        right: 12px;
+        background: transparent;
+        border: none;
+        color: #fff;
+        font-size: 28px;
+        line-height: 1;
+        cursor: pointer;
+        padding: 6px 15px;
+        border-radius: 6px;
+        z-index: 10001;
+}
+.mobile-close:hover { color: var(--web-theme); background: rgba(255,255,255,0.03); }
+
+/* Responsive adjustments
+   Hamburger should remain visible on all screen sizes.
+   On very large screens reduce the visible menu width when active. */
+@media (min-width: 1200px) {
+    .mobile-nav.active { width: 25vw; }
+}
+
+.row{
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-around !important;
+}
+
+.hamburger-container{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+/* nav links */
+.mobile-nav a:hover {
+  color: var(--web-theme);
+}
+
+@media (max-width: 787px){
+    .mobile-nav.active { width: 80vw; }
+}
+
+</style>
+
+<!--::::: HEADER AREA START :::::::-->
+<div class="header-area header-main" id="header">
+    <!--scroll to up btn-->
+    <a href="#" class="up-btn"><i class="fal fa-angle-up"></i></a>
+    <div class="container">
+        <div class="row">
+            <div class="col-6 col-lg-3 align-self-start">
+                <a href="https://vaaptech.com/" class="logo"><img src="https://vaaptech.com/assets/img/logo/logo2.png" alt=""></a>
+                <!-- <a class="navbar-brand" href="https://vaaptech.com/"><img src="https://vaaptech.com/assets/img/logo/vaaplogo.png" alt="VAAP Technologies" height="70"></a> -->
+
+            </div>
+            <!-- <div class="col-6 text-center align-self-center">
+                <div class="main-menu">
+                    <div class="stellarnav">
+                        <ul class="navbarmneuclass">
+                            <li class="current"><a href="https://vaaptech.com/">Home</a></li>
+
+                            <li><a href="https://vaaptech.com/about-vaap">About</a></li>
+                            <li><a href="#service">Service</a></li>
+                            <li><a href="#portfolio">Portfolio</a></li>
+                            <li><a href="#">Pages</a>
+                                        <ul>
+                                            <li><a href="about.html">About</a></li>
+                                            <li><a href="portfolio.html">Portfolio</a></li>
+                                            <li><a href="single-portfolio.html">Portfolio Details</a></li>
+                                            <li><a href="blog.html">Blog</a></li>
+                                            <li><a href="single-blog.html">Single Blog</a></li>
+                                            <li><a href="contact.html">Contact Us</a></li>
+                                        </ul>
+                                    </li>
+                        </ul>
+                    </div>
+                </div>
+            </div> -->
+            
+            
+
+            <!-- d-lg-block -->
+            <div class="d-none  col-lg-3 align-self-center text-right">
+                <div class="search-area">
+                    <div class="search-box">
+                        <form action="#">
+                            <input type="search" placeholder="Search">
+                        </form>
+                        <div class="search-btn">
+                            <a href="#"><i class="fas fa-search"></i></a>
+                        </div>
+                    </div>
+                    <!-- <div class="grid-menu" id="grid-side">
+                        <img src="assets/img/icon/hamburger.svg" alt="">
+                    </div> -->
+                </div>
+            </div>
+
+            <!-- <div class="col-lg-6 d-none d-lg-flex align-self-center justify-content-center">
+                <ul class="navbar-nav flex-row gap-4">
+                    <li class="nav-item"><a class="nav-link text-white" href="https://vaaptech.com/">Home</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="https://vaaptech.com/about-vaap">About VAAP</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="https://vaaptech.com/business-solution">Business Solution</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="https://vaaptech.com/technology-solutions">Technology Solution</a></li>
+                </ul>
+            </div> -->
+            <div class="col-6 text-right align-self-center hamburger-container">
+                <!-- Hamburger Icon (Visible on all screens) -->
+                <div class="hamburger" id="hamburger">
+                    <span class="line line1"></span>
+                    <span class="line line2"></span>
+                    <span class="line line3"></span>
+                </div>
+
+
+                <!-- Mobile Navigation (sliding from the right) -->
+                <ul class="mobile-nav d-none" id="mobileMenu">
+                    <button class="mobile-close" id="mobileClose" aria-label="Close menu">&times;</button>
+                    <div class="nav-links" style="padding-top: 30px; width: 100%;">
+
+                        <li><a href="https://vaaptech.com/">Home</a></li>
+                        <li><a href="https://vaaptech.com/about-vaap">About VAAP</a></li>
+                        <li><a href="https://vaaptech.com/temple-solutions">Temple Solution</a></li>
+                        <li><a href="https://vaaptech.com/business-solution">Business Solution</a></li>
+                        <li><a href="https://vaaptech.com/technology-solutions">Technology Solution</a></li>
+                        <li><a href="https://vaaptech.com/contact-us">Contact Us</a></li>
+
+                    </div>
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+    <div class="slide-widgest-wrap" id="slide-widgest">
+        <div class="side-widgest" id="side-content">
+            <div class="side-close" id="close-btn">
+                <i class="fal fa-times"></i>
+            </div>
+            <div class="logo" style="display: none;">
+                <a href="#"><img src="assets/img/logo/logo.png" alt=""></a>
+            </div>
+            <div class="side-content">
+                <li class="current">
+                    <a href="https://vaaptech.com/" onclick="closeSideMenu()" style="height: 59px;font-size: 32px;">Home</a>
+                </li>
+                <li>
+                    <a href="https://vaaptech.com/technology-solutions" onclick="closeSideMenu()" style="height: 59px;font-size: 32px;">Our Solutions</a>
+                </li>
+                <li>
+                    <a href="https://vaaptech.com/about-vaap" onclick="closeSideMenu()" style="height: 59px;font-size: 32px;">About VAAP</a>
+                </li>
+                <!-- <li><a href="#portfolio">Portfolio</a></li>
+                                    <li><a href="#">Pages</a>
+                                        <ul>
+                                            <li><a href="about.html">About</a></li>
+                                            <li><a href="portfolio.html">Portfolio</a></li>
+                                            <li><a href="single-portfolio.html">Portfolio Details</a></li>
+                                            <li><a href="blog.html">Blog</a></li>
+                                            <li><a href="single-blog.html">Single Blog</a></li>
+                                            <li><a href="contact.html">Contact Us</a></li> -->
+                <!-- </ul>
+                                    </li> -->
+                <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint ratione reprehenderit, error qui enim sit ex provident iure, dolor, nulla eaque delectus, repudiandae commodi. Velit assumenda odit quisquam at, error suscipit unde, necessitatibus ipsum ratione excepturi ducimus labore, totam dolorem.</p> -->
+            </div>
+            <!-- <div class="side-social">
+                        <ul>
+                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        </ul>
+                    </div> -->
+        </div>
+    </div>
+</div>
+
+<script>
+    // Function to close the side menu
+    function closeSideMenu() {
+        const sideWidget = document.getElementById('slide-widgest');
+        sideWidget.style.display = 'none'; // Hide the side menu
+    }
+
+    // Close side menu when the "close button" is clicked
+    document.getElementById('close-btn').addEventListener('click', function() {
+        const sideWidget = document.getElementById('slide-widgest');
+        sideWidget.style.display = 'none';
+    });
+
+    // Ensure the menu opens when the hamburger icon is clicked
+    document.getElementById('grid-side').addEventListener('click', function() {
+        const sideWidget = document.getElementById('slide-widgest');
+        sideWidget.style.display = 'block';
+    });
+
+
+    
+
+</script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const hamburger = document.getElementById('hamburger');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        if (hamburger && mobileMenu) {
+            hamburger.addEventListener('click', (e) => {
+                e.stopPropagation();
+                const isActive = hamburger.classList.toggle('active');
+                mobileMenu.classList.toggle('d-none');
+                mobileMenu.classList.toggle('active', isActive);
+            });
+
+                // Close button inside the mobile nav
+                const mobileClose = document.getElementById('mobileClose');
+                if (mobileClose) {
+                    mobileClose.addEventListener('click', (ev) => {
+                        ev.stopPropagation();
+                        hamburger.classList.remove('active');
+                        mobileMenu.classList.add('d-none');
+                        mobileMenu.classList.remove('active');
+                    });
+                }
+
+            // Close menu when any link inside is clicked
+            mobileMenu.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    hamburger.classList.remove('active');
+                    mobileMenu.classList.add('d-none');
+                    mobileMenu.classList.remove('active');
+                });
+            });
+
+            // Close menu when clicking outside
+            document.addEventListener('click', (ev) => {
+                if (!mobileMenu.classList.contains('active')) return;
+                if (!mobileMenu.contains(ev.target) && !hamburger.contains(ev.target)) {
+                    hamburger.classList.remove('active');
+                    mobileMenu.classList.add('d-none');
+                    mobileMenu.classList.remove('active');
+                }
+            });
+        }
+    });
+
+
+    
+</script>
+<!--::::: HEADER AREA END :::::::-->
+<head>
+
+    <style>
+        :root {
+            --teal-theme: #0b8f84;
+            --teal-light-bg: rgba(0, 92, 75, 0.56);
+        }
+
+        .overview-text::after {
+            content: "";
+            display: block;
+            width: 45%;
+            height: 2px;
+            background-color: #c00000;
+            margin-bottom: 10px;
+        }
+
+        .overview-text {
+            letter-spacing: 1.2px;
+        }
+
+        .animated-button1 {
+            margin: 0px !important;
+        }
+
+        .about-area {
+            padding-bottom: 0px !important;
+        }
+
+
+        @media (max-width: 768px) {
+            .about-area1 {
+                padding: 0px !important;
+            }
+
+            .about-shape {
+                margin-left: 0px !important;
+            }
+
+            .video-container {
+                padding-top: 50px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!--BODY START-->
+
+    <!--PLACEHOLDER AREA START-->
+    <div class="preloader">
+        <div class="lds-dual-ring"></div>
+    </div>
+    <!--PLACEHOLDER AREA END-->
+
+    <div class="site site-black">
+        <!--::::: SITE AREA START :::::::-->
+        <!--::::: VIDEO BANNER START ::::::: prev design-->
+        <div class="slider-area position-relative" style="width: 100%; height: 100vh; overflow: hidden;">
+            <video autoplay loop muted playsinline style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 100%; height: 100%; object-fit: cover;">
+                <source src="https://vaaptech.com/assets/vidio/bg-video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
+        <!--::::: Banner Carousel :::::::-->
+        <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+    .hero-carousel {
+
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+        position: relative;
+        /* Needed for positioning custom elements */
+    }
+
+    .hero-carousel .carousel-item {
+
+        z-index: 0;
+        /* Add this line to stack the slides properly */
+    }
+
+    /* Style the images to cover the entire container */
+    .hero-carousel .carousel-item img {
+        width: 100% !important;
+        max-width: 100% !important;
+        height: 100vh;
+        object-fit: cover;
+        /* Prevents image distortion */
+        object-position: center;
+        z-index: 1;
+    }
+
+
+    /* Add the Ken Burns (slow zoom) effect */
+    @keyframes kenburns {
+        0% {
+            transform: scale(1.0);
+        }
+
+        100% {
+            transform: scale(1.1);
+        }
+    }
+
+    .carousel-item {
+        transition: transform 0.9s ease-in-out;
+        /* default is ~0.6s */
+    }
+
+
+    /* --- Custom Carousel Controls --- */
+
+    /* Style the previous/next buttons */
+    .hero-carousel .carousel-control-prev,
+    .hero-carousel .carousel-control-next {
+        width: 60px;
+        height: 60px;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 50%;
+        top: 50%;
+        transform: translateY(-50%);
+        transition: background 0.3s ease;
+        z-index: 3;
+    }
+
+    @media (max-width: 768px) {
+
+        .hero-carousel .carousel-control-prev,
+        .hero-carousel .carousel-control-next {
+            width: 38px;
+            height: 38px;
+            top: 50%;
+        }
+
+        .hero-carousel .carousel-control-prev {
+            left: 0.5rem;
+        }
+
+        .hero-carousel .carousel-control-next {
+            right: 0.5rem;
+        }
+
+        .hero-carousel .hero-text h1 {
+            font-size: 1.3rem !important;
+        }
+
+        .hero-carousel .hero-text p {
+            font-size: 0.85rem !important;
+        }
+
+        .main-nav {
+            background-color: var(--primary-text);
+            color: white;
+        }
+    }
+
+    .hero-carousel .carousel-control-prev:hover,
+    .hero-carousel .carousel-control-next:hover {
+        background: rgba(255, 255, 255, 0.2);
+    }
+
+    .hero-carousel .carousel-control-prev {
+        left: 2rem;
+    }
+
+    .hero-carousel .carousel-control-next {
+        right: 2rem;
+    }
+
+    /* Style the bottom indicators */
+    .hero-carousel .carousel-indicators [data-bs-target] {
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background-color: rgba(255, 255, 255, 0.5);
+        border: none;
+        margin: 0 8px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        z-index: 3;
+    }
+
+    .hero-carousel .carousel-indicators .active {
+        background-color: white;
+    }
+</style>
+
+<section class="hero-carousel">
+    <div id="templeCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#templeCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#templeCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#templeCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="7000">
+                <img src="https://images.unsplash.com/photo-1524443169398-9aa1ceab67d5?auto=format&fit=crop&w=1920&q=80" alt="Majestic Temple" />
+                <div class="carousel-overlay"></div>
+                <div class="carousel-caption d-none d-md-block">
+                    <h1>An Aspect Software Innovation Company.</h1>
+                    <p>Together we the people achieve more than any single person could ever do alone.</p>
+                    <a href="#" class="cbtn cbnt1 fadeInDown animated">Getting Started <i class="fal fa-angle-right"></i></a>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="7000">
+                <img src="https://plus.unsplash.com/premium_photo-1716903508664-8e23f6ba4331?auto=format&fit=crop&w=1920&q=80" alt="Intricate Temple Carvings" />
+                <div class="carousel-overlay"></div>
+                <div class="carousel-caption d-none d-md-block">
+                    <h1>Navigate Your Temple in to a live experience.</h1>
+                    <p>Experience the tranquility and beauty of ancient temples.</p>
+                    <a href="#" class="cbtn cbnt1 fadeInDown animated">Getting Started <i class="fal fa-angle-right"></i></a>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="7000">
+                <img src="https://images.unsplash.com/photo-1528181304800-259b08848526?auto=format&fit=crop&w=1920&q=80" alt="Peaceful Temple by Water" />
+                <div class="carousel-overlay"></div>
+                <div class="carousel-caption d-none d-md-block">
+                    <h1>Find Peace. Find Yourself.</h1>
+                    <p>A spiritual journey awaits you.</p>
+                    <a href="#" class="cbtn cbnt1 fadeInDown animated">Getting Started <i class="fal fa-angle-right"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#templeCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#templeCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script> -->
+
+
+        <!--:::::ABOUT AREA START :::::::-->
+        <div class="about-area about-area1 section-padding" id="about">
+            <div class="container">
+                <div class="row g-5">
+                    <div class="col-lg-6 align-self-center">
+                        <div class="heading white">
+                            <!-- <strong class="filltext">Corporate Overview</strong> -->
+                            <!-- <small>WHAT WE DO</small> -->
+                            <h2 class="overview-text">Corporate Overview</h2>
+                        </div>
+                        <!-- info-content -->
+                        <div class=" mt-5 mb-4">
+                            <p>Comprehensive Visual Business Management Solutions that is delivered on a secured SaaS platform with a broad range of functional and technical features! </p>
+                        </div>
+                        <!-- <div class="col-lg-6 align-self-center" style="padding-left: 0px ;"> -->
+                        <div class="heading white">
+                            <!-- <strong class="filltext">Corporate Overview</strong>
+                            <h2>Corporate Overview</h2>
+                            <p>Comprehensive Visual Business Management Solutions that is delivered on a secured SaaS platform with a broad range of functional and technical features!</p> -->
+                            <a href="about-vaap" class="animated-button1 loader" style="border: 1px solid white;">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                Learn More <i class="fal fa-angle-right"></i>
+                            </a>
+                        </div>
+                        <!-- </div> -->
+                    </div>
+                    <div class="col-lg-6 col-md-12 align-self-center video-container">
+
+                        <!-- <div class="col-lg-5 align-self-center"> -->
+                        <div class="about-shape" style="
+                            margin-left: 100px;">
+                            <div class="about-img-section about-img-section1 text-center" style="height: 36px; width: 373px; position: relative;">
+                                <a class="icon-wrapper" style="cursor: pointer; position: absolute; bottom: 10px; right: 10px; display: flex; justify-content: center; align-items: center;" onclick="openVideoModal()">
+
+                                    <i class="text-center icon-sm icon-box rounded-circle text-white bg-gradient-primary d-block ti-control-play" style="height: 55px; width: 53px; font-size: 28px;"></i>
+
+                                    <i class="overlay-icon fa fa-play text-white" style="font-size: 28px;"></i>
+                                </a>
+                                <div id="video-overlay" class="video-overlay">
+                                    <a class="video-overlay-close"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- </div> -->
+
+
+                    </div>
+                </div>
+                <!-- <div class="row">
+                    
+                </div> -->
+            </div>
+        </div>
+
+        <!--::::: WELCOME SECTION START :::::::-->
+        <div class="welcome-area-wrap welcome__wrap1">
+            <!--::::: WELCOME CAROUSEL START :::::::-->
+            <div class="welcome-carousel owl-carousel">
+                <!-- Slide 1 -->
+                <div class="single-welcome-area home_1">
+                    <div class="container">
+                        <div class="row g-2">
+                            <div class="col-lg-7">
+                                <div class="wlc-title white">
+                                    <h1 class="fadeInDown animated"><span>An Aspect</span> Software Innovation Company.</h1>
+                                    <p class="fadeInDown animated">Together we the people achieve more than any single person
+                                        <br>could ever do alone.
+                                    </p>
+                                    <!-- <a href="#" class="cbtn cbnt1 fadeInDown animated">Getting Started <i class="fal fa-angle-right"></i></a> -->
+                                    <a href="" class="animated-button1 loader" style="border: 1px solid white;">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        Getting Started
+                                        <i class="fal fa-angle-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-5">
+                                <div class="unique-author-container">
+                                    <img src="assets/img/author/author2.png" alt="Author Image" class="unique-author-image">
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="single-welcome-area home_1">
+                    <div class="container">
+                        <div class="row g-2">
+                            <div class="col-lg-7">
+                                <div class="wlc-title white">
+                                    <h1 class="fadeInDown animated"><span>Navigate Your</span> Temple in to a live experience.</h1>
+                                    <p class="fadeInDown animated">Together we the people achieve more than any single person
+                                        <br>could ever do alone.
+                                    </p>
+                                    <a href="" class="animated-button1 loader" style="border: 1px solid white;">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        Getting Started
+                                        <i class="fal fa-angle-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-5">
+                                <div class="unique-author-container">
+                                    <img src="assets/img/author/author1.png" alt="Author Image" class="unique-author-image">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!--::::: WELCOME CAROUSEL END :::::::-->
+        </div>
+        <!--::::: WELCOME SECTION END :::::::-->
+
+        <!--:::::ABOUT AREA START :::::::-->
+        <!-- <div class="about-area about-area1 section-padding" id="about">
+    <div class="container">
+    <div class="row">
+                    <div class="col-lg-6 align-self-center">
+                        <div class="heading white">
+                            <strong class="filltext">Corporate Overview</strong>
+                            <!-- <small>WHAT WE DO</small> ->
+                            <h2>Corporate <span> Overview</span></h2>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 align-self-center">
+                         <div class="info-content">
+                            <p>Comprehensive Visual Business Management Solutions that is delivered on a secured SaaS platform with a broad range of functional and technical features! </p>
+                        </div>
+                    </div>
+                </div>
+        <div class="row">
+            <div class="col-lg-5 align-self-center">
+                <div class="about-shape">
+                    <div class="about-img-section about-img-section1 text-center" style="height: 36px; width: 529px; margin-top: 40px;">
+                        <a class="icon-wrapper" style="cursor: pointer;" onclick="openVideoModal()">
+                            <!-- Original Icon ->
+                            <i class="text-center icon-sm icon-box rounded-circle text-white bg-gradient-primary d-block ti-control-play" style="margin-top: 129px; margin-left: -244px; height: 55px; width: 53px;"></i>
+                            <!-- Overlay Icon ->
+                            <i class="overlay-icon fa fa-play text-white" style="margin-left: -217px; margin-top: 65px;"></i>
+                        </a>
+                        <div id="video-overlay" class="video-overlay">
+                            <a class="video-overlay-close"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 offset-lg-1 align-self-center">
+                <div class="heading white">
+                    <!-- <strong class="filltext">Corporate Overview</strong>
+                    <h2>Corporate Overview</h2>
+                    <p>Comprehensive Visual Business Management Solutions that is delivered on a secured SaaS platform with a broad range of functional and technical features!</p> ->
+                    <a href="#" class="cbtn cbnt1 fadeInDown animated">Learn More <i class="fal fa-angle-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> -->
+
+        <!-- Video Modal -->
+        <div id="videoModal" class="modal" style="display: none;">
+            <div class="modal-content">
+                <span class="close" onclick="closeVideoModal()">&times;</span>
+                <iframe id="youtube-video" width="100%" height="400" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <style>
+            /* Modal Styles */
+            .modal {
+                display: none;
+                /* Hidden by default */
+                position: fixed;
+                /* Stay in place */
+                z-index: 1000;
+                /* Sit on top */
+                left: 0;
+                top: 0;
+                width: 100%;
+                /* Full width */
+                height: 100%;
+                /* Full height */
+                overflow: hidden;
+                /* Disable scroll */
+                background-color: rgba(0, 0, 0, 0.8);
+                /* Black w/ opacity */
+            }
+
+            .modal-content {
+                background-color: #fefefe;
+                margin: auto;
+                /* Center modal content */
+                padding: 0;
+                border: none;
+                width: 80%;
+                /* Could be more or less, depending on screen size */
+                max-width: 800px;
+                /* Set a max width for larger screens */
+                position: relative;
+                /* Positioning for close button */
+                top: 50%;
+                /* Move down from the top */
+                transform: translateY(-50%);
+                /* Center vertically */
+            }
+
+            .close {
+                color: #aaa;
+                position: absolute;
+                /* Position close button */
+                top: 10px;
+                right: 20px;
+                font-size: 28px;
+                font-weight: bold;
+                cursor: pointer;
+            }
+
+            .close:hover,
+            .close:focus {
+                color: black;
+                text-decoration: none;
+            }
+
+            a.cbtn.cbnt1 {
+                margin-top: 50px;
+            }
+        </style>
+
+        <script>
+            function openVideoModal() {
+                const videoModal = document.getElementById('videoModal');
+                const youtubeVideo = document.getElementById('youtube-video');
+                youtubeVideo.src = "https://www.youtube.com/embed/6hzOHNhEFiM?autoplay=1"; // Embed YouTube video
+                videoModal.style.display = "block"; // Show modal
+                document.body.style.overflow = "hidden"; // Prevent background scroll
+            }
+
+            function closeVideoModal() {
+                const videoModal = document.getElementById('videoModal');
+                const youtubeVideo = document.getElementById('youtube-video');
+                youtubeVideo.src = ""; // Stop video
+                videoModal.style.display = "none"; // Hide modal
+                document.body.style.overflow = "auto"; // Allow background scroll again
+            }
+        </script>
+
+        <!--:::::ABOUT AREA END :::::::-->
+
+        <!-- <div class="service-area padding-bottom" id="service">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 align-self-center">
+                        <div class="heading white">
+                            <strong class="filltext">our services</strong>
+                            <small>WHAT WE DO</small>
+                            <h2>Bussiness <span> Solutions</span></h2>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 align-self-center">
+                        <div class="info-content">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint ratione reprehenderit, error qui enim sit ex provident</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="space-60"></div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <a href="market-solution" style="text-decoration: none; color: inherit;">
+                            <div class="single-service active" style="border: 1px solid;">
+                                <div class="service-icon">
+                                    <img src="assets/img/icon/service1.svg" alt="">
+                                </div>
+                                <div class="service-text">
+                                    <h4>Market solutions</h4>
+                                    <p style="color:white;">Visual ASPECT Innovations leads to comprehensive Business Solutions.</p>
+                                    </br>
+                                    <p>Sports Solutions</p>
+                                    <p>CONSTRUCTION SOLUTIONS</p>
+                                    <p>CONTRACTOR SOLUTIONS</p>
+                                    <p>HEALTHCARE SOLUTIONS</p>
+                                    <p>BUSINESS ASSIST SOLUTIONS</p>
+                                    <p>HOSPITALITY SOLUTIONS</p>
+                                    <p>NON-PROFIT SOLUTIONS</p>
+                                </div>
+                                <div class="circles-wrap">
+                                    <div class="circles">
+                                        <span class="circle circle-1"></span>
+                                        <span class="circle circle-2"></span>
+                                        <span class="circle circle-3"></span>
+                                        <span class="circle circle-4"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-6">
+                        <a href="technology-solution" style="text-decoration: none; color: inherit;">
+                            <div class="single-service active" style="border: 1px solid;">
+                                <div class="service-icon">
+                                    <img src="assets/img/icon/service2.svg" alt="">
+                                </div>
+                                <div class="service-text">
+                                    <h4>Technology solutions</h4>
+                                    <p>Visual ASPECT Innovations leads to comprehensive Technology Solutions.</p>
+                                    </br>
+                                    <p>BUSINESS PORTALS</p>
+                                    <p>MOBILE APPLICATIONS</p>
+                                    <p>INTERACTIVE KIOSKS</p>
+                                    <p>TECHNICAL FEATURES</p>
+                                    <p>FUNCTIONAL FEATURES</p>
+                                    <p>MULTI-LAYERED SECURITY</p>
+                                    <p>SaaS PLATFORMS</p>
+                                </div>
+                                <div class="circles-wrap">
+                                    <div class="circles">
+                                        <span class="circle circle-1"></span>
+                                        <span class="circle circle-2"></span>
+                                        <span class="circle circle-3"></span>
+                                        <span class="circle circle-4"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+
+
+        <!-- <style>
+
+            body{
+                color: white;
+            }
+            .service-area {
+                padding-top: 100px;
+                padding-bottom: 100px;
+                background-color: #0b8f84;
+            }
+            
+            /* --- Heading Styles --- */
+            .heading small {
+                color: #005c4b !important;
+                font-size: 0.9rem;
+                font-weight: 600;
+                letter-spacing: 1px;
+                text-transform: uppercase;
+                display: block;
+                margin-bottom: 10px;
+            }
+
+            .heading h2 {
+                font-size: 2.5rem;
+                font-weight: 700;
+            }
+            
+            .heading h2 span {
+                color: #005c4b !important; /* Example accent color */
+            }
+            
+            .info-content p {
+                color: #ffffffcd;
+                font-size: 1.1rem;
+                line-height: 1.6;
+            }
+
+            /* --- Glassmorphism Card Style --- */
+            .single-service {
+                background: #042f27; /* Semi-transparent dark background */
+                backdrop-filter: blur(20px);
+                -webkit-backdrop-filter: blur(20px); /* Safari support */
+                border: 1px solid rgba(255, 255, 255, 0.1);
+                border-radius: 16px;
+                padding: 35px;
+                transition: border-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+                text-decoration: none;
+                color: inherit;
+                display: block;
+                height: 100%; /* Ensures cards in a row are the same height */
+            }
+
+            .single-service:hover {
+                transform: translateY(-10px);
+                border-color: #005c4b !important;
+                box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
+            }
+
+            .info-content{
+                border-left-color: #005c4b !important;
+            }
+
+            .service-icon img {
+                width: 50px;
+                margin-bottom: 25px;
+                height: 50px;
+                color: #fefefe !important;
+            }
+            
+            .service-text h4 {
+                font-size: 1.5rem;
+                font-weight: 600;
+                margin-bottom: 10px;
+                color: #ffffff !important;
+            }
+            
+            .service-text > p {
+                color: #d1d5db;
+                margin-bottom: 25px;
+            }
+
+            /* --- Service Tags (Pills) Styling --- */
+            .service-tags {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 10px;
+                padding-top: 15px;
+                border-top: 1px solid rgba(255, 255, 255, 0.1);
+            }
+
+            .service-tags p {
+                margin: 0;
+                padding: 8px 16px;
+                background-color: rgba(56, 189, 248, 0.1);
+                border: 1px solid rgba(56, 189, 248, 0.2);
+                border-radius: 30px;
+                font-size: 0.85rem;
+                font-weight: 500;
+                color: #e0f2fe;
+            }
+
+            .single-service {
+                position: relative;
+                overflow: hidden;
+            }
+
+
+            .single-service {
+                position: relative;
+                overflow: hidden;
+            }
+
+            .single-service::after {
+                content: '';
+                position: absolute;
+                left: var(--mouse-x, 50%);
+                top: var(--mouse-y, 50%);
+                width: 300px;
+                height: 300px;
+                background: radial-gradient(circle, rgba(8, 214, 101, 0.15) 0%, rgba(8, 214, 101, 0) 60%);
+                transform: translate(-50%, -50%) scale(0);
+                opacity: 0;
+                transition: transform 0.4s ease, opacity 0.4s ease;
+                z-index: 0;
+            }
+
+            .single-service > * {
+                position: relative;
+                z-index: 1;
+            }
+
+            .single-service:hover::after {
+                transform: translate(-50%, -50%) scale(1);
+                opacity: 1;
+            }
+        </style> -->
+
+        <style>
+            /* --- General Styles --- */
+            body {
+                color: white;
+                font-family: 'Arial', sans-serif;
+            }
+
+            .custom-service-area {
+                background-color: var(--teal-theme);
+                /* Teal Background */
+                /* padding: 80px 0; */
+                padding: 0px 0px 1px 0px;
+            }
+
+            /* --- Title and Info Section --- */
+            .custom-title-row {
+                margin-bottom: 60px;
+            }
+
+            .custom-heading small {
+                color: #ffffff;
+                font-size: 1rem;
+                font-weight: 600;
+                text-transform: uppercase;
+                display: block;
+                margin-bottom: 15px;
+            }
+
+            .custom-heading h2 {
+                font-size: 2.8rem;
+                font-weight: 700;
+                color: #ffffff;
+            }
+
+            .custom-heading h2 span {
+                color: #005c4b;
+                /* Accent color */
+            }
+
+            .custom-info-content p {
+                color: #ffffffb3;
+                font-size: 1.1rem;
+                line-height: 1.7;
+                padding-top: 15px;
+            }
+
+            /* --- Service Row Layout (Simple Text and Tags) --- */
+            .custom-service-row {
+                margin-bottom: 60px;
+            }
+
+            .custom-service-left {
+                padding-right: 20px;
+            }
+
+            .custom-service-right {
+                padding-left: 20px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .custom-service-image {
+                max-width: 100%;
+                border-radius: 10px;
+            }
+
+            /* --- Service Title and Description --- */
+            .custom-service-left h3 {
+                font-size: 2rem;
+                font-weight: 600;
+                color: #fff;
+                margin-bottom: 20px;
+            }
+
+            .custom-service-left p {
+                font-size: 1rem;
+                color: #d1d5db;
+                line-height: 1.6;
+                margin-bottom: 20px;
+            }
+
+            /* --- Service Tags (Key Points) --- */
+            .custom-service-points ul {
+                list-style-type: none;
+                padding-left: 0;
+                display: flex;
+                flex-wrap: wrap;
+                gap: 5px;
+            }
+
+            @media (max-width: 767px) {
+                .custom-service-points ul {
+                    flex-direction: column !important;
+                }
+
+                .custom-service-points li{
+                    width: 100% !important;
+                }
+            }
+
+            .custom-service-points li {
+                font-size: 1rem;
+                color: #d1d5db;
+                display: flex;
+                align-items: center;
+                width: calc(50% - 15px);
+                margin-bottom: 10px;
+            }
+
+            .custom-service-points i {
+                color: #002e2e;
+                /* Checkmark icon color #034848 50%;*/
+                margin-right: 10px;
+                font-size: 1.2rem;
+            }
+
+
+            .custom-service-points .point-container {
+                display: flex;
+                justify-content: flex-start;
+                gap: 50px;
+            }
+
+            .service-btn {
+                margin-top: 30px !important;
+            }
+
+
+            /* --- Responsive Layout --- */
+            @media (max-width: 768px) {
+
+                .custom-service-left,
+                .custom-service-right {
+                    padding-left: 10px;
+                    padding-right: 10px;
+                }
+
+                .custom-service-left h3 {
+                    font-size: 1.5rem;
+                }
+
+                .custom-service-image {
+                    max-width: 100%;
+                    border-radius: 10px;
+                }
+
+                .custom-btn {
+                    font-size: 1rem;
+                    padding: 10px 20px;
+                }
+
+                .service-area {
+                    padding-top: 0px !important;
+                }
+            }
+        </style>
+
+        <div class="service-area custom-service-area" id="service">
+            <div class="container">
+                <!-- "Our Services" Title and Description -->
+                <div class="row custom-title-row">
+                    <div class="col-12 pt-3">
+                        <div class="custom-heading">
+                            <small style="color: #005c4b;">OUR SERVICES</small>
+                            <h2>Architecting Future-Ready <span>Solutions</span></h2>
+                        </div>
+                        <div class="info-content">
+                            <p>We engineer bespoke solutions that integrate seamlessly with your operational framework, driving innovation and scalable growth across key business verticals.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 1: Business Solutions -->
+                <div class="row custom-service-row">
+                    <div class="col-lg-6 custom-service-left">
+                        <h3>Business Solutions</h3>
+                        <p>Comprehensive strategies to enhance market presence and engagement for diverse business verticals.</p>
+                        <div class="custom-service-points">
+                            <ul>
+                                <li><i class="fas fa-check-circle"></i> Sports Solutions</li>
+                                <li><i class="fas fa-check-circle"></i> Construction</li>
+                                <li><i class="fas fa-check-circle"></i> Contractors</li>
+                                <li><i class="fas fa-check-circle"></i> Healthcare</li>
+                                <li><i class="fas fa-check-circle"></i> Business Assist</li>
+                                <li><i class="fas fa-check-circle"></i> Hospitality</li>
+                                <li><i class="fas fa-check-circle"></i> Non-Profit</li>
+                            </ul>
+                        </div>
+
+                        <a href="business-solution" class="animated-button1 loader service-btn" style="border: 1px solid white;">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            Learn More <i class="fal fa-angle-right"></i>
+                        </a>
+                    </div>
+                    <div class="col-lg-6 custom-service-right">
+                        <img src="https://via.placeholder.com/600x400" alt="Business Solutions Image" class="custom-service-image">
+                    </div>
+                </div>
+
+                <!-- Service 2: Technology Solutions -->
+                <div class="row custom-service-row">
+                    <div class="col-lg-6 custom-service-right">
+                        <img src="https://via.placeholder.com/600x400" alt="Technology Solutions Image" class="custom-service-image">
+                    </div>
+                    <div class="col-lg-6 custom-service-left">
+                        <h3>Technology Solutions</h3>
+                        <p>Robust digital ecosystems designed for performance, security, and scalability in a modern landscape.</p>
+                        <div class="custom-service-points">
+                            <ul>
+
+                                <li><i class="fas fa-check-circle"></i> Business Portals</li>
+                                <li><i class="fas fa-check-circle"></i> Mobile Applications</li>
+
+
+                                <li><i class="fas fa-check-circle"></i> Interactive Kiosks</li>
+                                <li><i class="fas fa-check-circle"></i> SaaS Platforms</li>
+
+
+
+                                <li><i class="fas fa-check-circle"></i> Technical Features</li>
+                                <li><i class="fas fa-check-circle"></i> Functional Features</li>
+
+
+                                <li><i class="fas fa-check-circle"></i> Multi-Layered Security</li>
+
+                            </ul>
+                        </div>
+                        <a href="technology-solutions" class="animated-button1 loader service-btn" style="border: 1px solid white;">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            Learn More <i class="fal fa-angle-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <style>
+            /* Adjust card width for larger screens */
+            @media (min-width: 1200px) {
+                .card {
+                    width: 60% !important;
+                    /* Reduce width to 60% on large screens */
+                }
+            }
+
+            /* Styles for buttons on large screens */
+            /* @media (min-width: 1200px) {
+        .btn {
+            font-size: 12px;
+            font-family: "Poppins", sans-serif;
+            text-transform: capitalize;
+            padding: 5px 8px;
+            border-radius: 0px !important;
+            font-weight: 600;
+            border: 1px solid;
+            position: relative;
+            z-index: 1;
+            transition: 0.2s ease;
+            margin-left: 304px;
+            background-color: black;
+            color: white;
+            border-color: orange;
+        }
+    } */
+
+            /* @media (max-width: 1200px) and (min-width: 768px) {
+    .btn {
+        font-size: 12px;
+        font-family: "Poppins", sans-serif;
+        text-transform: capitalize;
+        padding: 5px 8px;
+        border-radius: 0px !important;
+        font-weight: 600;
+        border: 1px solid;
+        position: relative;
+        z-index: 1;
+        transition: 0.2s ease;
+        margin-left: 304px;
+        background-color: black;
+        color: white;
+        border-color: orange;
+    }
+} */
+
+            @media only screen and (max-width: 2000px) and (min-width: 768px) {
+                .btn {
+                    font-size: 14px;
+                    font-family: "Poppins", sans-serif;
+                    text-transform: capitalize;
+                    padding: 5px 6px;
+                    border-radius: 4px !important;
+                    font-weight: 600;
+                    border: 1px solid;
+                    position: relative;
+                    z-index: 1;
+                    transition: 0.2s ease;
+                    margin-left: 282px;
+                    background-color: black;
+                    color: white;
+                    border-color: orange;
+                }
+
+                .btn:hover {
+                    background-color: transparent !important;
+                    color: white !important;
+                }
+            }
+
+            @media only screen and (max-width: 768px) {
+                .btn {
+                    font-size: 12px;
+                    font-family: "Poppins", sans-serif;
+                    text-transform: capitalize;
+                    padding: 5px 8px;
+                    border-radius: 0px !important;
+                    font-weight: 600;
+                    border: 1px solid;
+                    position: relative;
+                    z-index: 1;
+                    transition: 0.2s ease;
+                    /* margin-left: 304px; */
+                    margin-left: 194px;
+                    background-color: black;
+                    color: white;
+                    border-color: orange;
+                }
+            }
+
+            @media only screen and (max-width: 1440px) and (min-width: 1200px) {
+                .btn {
+                    font-size: 14px;
+                    /* Slightly larger for larger screens */
+                    font-family: "Poppins", sans-serif;
+                    text-transform: capitalize;
+                    padding: 8px 12px;
+                    /* Adjust padding for larger buttons */
+                    border-radius: 0px !important;
+                    font-weight: 600;
+                    border: 1px solid;
+                    position: relative;
+                    z-index: 1;
+                    transition: 0.2s ease;
+                    margin-left: 150px;
+                    /* Adjust margin-left for screen size */
+                    background-color: black;
+                    color: white;
+                    border-color: orange;
+                }
+            }
+
+
+            @media only screen and (max-width: 985px) and (min-width: 770px) {
+                .btn {
+                    font-size: 13px;
+                    /* Adjust font size for medium screens */
+                    font-family: "Poppins", sans-serif;
+                    text-transform: capitalize;
+                    padding: 6px 10px;
+                    /* Adjust padding for proportion */
+                    border-radius: 0px !important;
+                    font-weight: 600;
+                    border: 1px solid;
+                    position: relative;
+                    z-index: 1;
+                    transition: 0.2s ease;
+                    margin-left: 100px;
+                    /* Adjust margin-left for this screen size */
+                    background-color: black;
+                    color: white;
+                    border-color: orange;
+                }
+            }
+
+
+
+
+            /* Responsive styles for small screens */
+            @media only screen and (max-width: 768px) {
+                .about-vaap-container {
+                    padding: 15px !important;
+                    /* Add spacing for small screens */
+                }
+
+                .about-vaap-heading {
+                    margin-left: 0 !important;
+                    /* Remove large screen margin */
+                    text-align: center !important;
+                    /* Center the heading */
+                    font-size: 24px !important;
+                    /* Adjust font size for smaller screens */
+                }
+
+                .info-content p {
+                    font-size: 14px !important;
+                    /* Adjust font size for readability */
+                    text-align: start !important;
+                    /* Center-align text */
+                }
+
+                .case-study-content {
+                    margin-top: 20px !important;
+                    /* Add spacing for layout clarity */
+                    text-align: center !important;
+                    /* Ensure content is centered */
+                }
+            }
+        </style>
+
+        <!-- previsous about section -->
+        <!-- <section class="section-padding40 fix" id="about-vaap" style="background: url(https://vaaptech.com/assets/img/gallery/aboutus-bg.png); overflow: hidden; background-size: cover; background-repeat: no-repeat; background-position: center;">
+    <div style="overflow: hidden; background-size: cover; background-repeat: no-repeat; background-position: center;">
+        <div class="mb-55 about-vaap-container" style="background: #0000008c; padding: 25px;">
+            <div class="row justify-content-center">
+                
+                <div class="container">
+        <div class="row">
+            <div class="col-lg-6 align-self-center">
+                <div class="heading white">
+                    <strong class="filltext">ABOUT VAAP</strong>
+                    
+                    <h2>About <span> VAAP</span></h2>
+                </div>
+            </div>
+            <div class="col-lg-6 align-self-center">
+                <div class="info-content">
+                    <p> Comprehensive Visual Business Management Solutions that is delivered on a secured SaaS platform with a 
+                            <br> broad range of functional and technical features!
+</p>
+                </div>
+            </div>
+        </div>
+            </div>
+            </div>
+        </div>
+
+        
+        <div class="row my-5">
+            
+            <div class="col-md-6 order-md-1 d-flex justify-content-end mb-4">
+                <div class="card rounded" style="background:#7d3e06; width: 90%;">
+                    <div class="card-body text-center">
+                        <h6 class="card-title text-white" style="font-size: 1.5rem; text-transform: uppercase;">Visualization Specialists</h6>
+                        <p class="card-text text-warning" style="font-size: 1.25rem; font-style: italic;">Customers visualize <br> realize solutions!</p>
+                        <a href="https://vaaptech.com/visualization" class="btn btn-outline-warning">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 order-md-2 mb-4"></div>
+
+            
+            <div class="col-md-6 order-md-4 d-flex justify-content-start mb-4">
+                <div class="card rounded" style="background:#4b474b; width: 90%;">
+                    <div class="card-body text-center">
+                        <h6 class="card-title text-white" style="font-size: 1.5rem; text-transform: uppercase;">VAAP Specialization</h6>
+                        <p class="card-text text-warning" style="font-size: 1.25rem; font-style: italic;">Experience ASPECT <br> Component Solutions!</p>
+                        <a href="https://vaaptech.com/about-vaap" class="btn btn-outline-warning">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 order-md-3 mb-4"></div>
+
+            
+            <div class="col-md-6 order-md-5 d-flex justify-content-end mb-4">
+                <div class="card rounded" style="background:#475d24; width: 90%;">
+                    <div class="card-body text-center">
+                        <h6 class="card-title text-white" style="font-size: 1.5rem; text-transform: uppercase;">VAAP Technologies Inc.</h6>
+                        <p class="card-text text-warning" style="font-size: 1.25rem; font-style: italic;">Business Management <br> Software Specialists!</p>
+                        <a href="https://vaaptech.com/about-vaap" class="btn btn-outline-warning">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 order-md-6 mb-4"></div>
+
+            
+            <div class="col-md-6 order-md-8 d-flex justify-content-start mb-4">
+                <div class="card rounded" style="background:#247083; width: 90%;">
+                    <div class="card-body text-center">
+                        <h6 class="card-title text-white" style="font-size: 1.5rem; text-transform: uppercase;">Software & Development</h6>
+                        <p class="card-text text-warning" style="font-size: 1.25rem; font-style: italic;">An ASPECT Innovations <br> Company first of its kind!</p>
+                        <a href="https://vaaptech.com/about-vaap" class="btn btn-outline-warning">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 order-md-7 mb-4"></div>
+        </div>
+    </div>
+</section> -->
+
+
+        <style>
+            #about-vaap {
+                position: relative;
+                background: url(https://vaaptech.com/assets/img/gallery/aboutus-bg.png) no-repeat center center;
+                background-size: cover;
+            }
+
+            /* Overlay applied only to background */
+            #about-vaap::after {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background-color: rgba(0, 92, 75, 0.56);
+                /* Semi-transparent teal */
+                z-index: 0;
+                /* Ensure the overlay stays behind the content */
+            }
+
+            /* Make sure your content stays above the overlay */
+            .about-vaap-container {
+                position: relative;
+                /* Ensure it is above the overlay */
+                z-index: 1;
+                /* Ensure this stays above the overlay */
+                padding: 25px;
+            }
+
+            /* Optional: Additional styles to prevent text blending with overlay */
+            .about-vaap-container .heading,
+            .about-vaap-container .info-content {
+                color: #ffffff;
+                /* Ensure text is always white for better contrast */
+            }
+        </style>
+
+        <section class="section-padding40 fix" id="about-vaap">
+            <div style="overflow: hidden; background-size: cover; background-repeat: no-repeat; background-position: center;">
+                <!-- About VAAP Section -->
+                <div class="mb-55 about-vaap-container" style=" padding: 25px;">
+                    <div class="row justify-content-center">
+                        <!-- Title Section -->
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-6 align-self-center">
+                                    <div class="heading white">
+                                        <strong class="filltext">ABOUT VAAP</strong>
+                                        <!-- <small>WHAT WE DO</small> -->
+                                        <h2>About <span> VAAP</span></h2>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 align-self-center">
+                                    <div class="info-content">
+                                        <p> Comprehensive Visual Business Management Solutions that is delivered on a secured SaaS platform with a
+                                            <br> broad range of functional and technical features!
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <style>
+                    .zigzag-wrapper {
+                        position: relative;
+                    }
+
+                    /* This is the missing vertical line */
+                    .zigzag-wrapper::before {
+                        content: "";
+                        position: absolute;
+                        top: 0;
+                        bottom: 0;
+                        left: 50%;
+                        width: 4px;
+                        background: linear-gradient(to bottom, #ffc107 0%, #ffc107ff 100%);
+                        transform: translateX(-50%);
+                        z-index: 0;
+                    }
+
+                    .zigzag-card {
+                        position: relative;
+                        z-index: 1;
+                        border-left: 6px solid transparent;
+                        border-right: 6px solid transparent;
+                        margin: 6px;
+                    }
+
+                    .zigzag-card::before {
+                        content: "";
+                        position: absolute;
+                        top: 50%;
+                        width: 12px;
+                        height: 12px;
+                        background: #ffc107;
+                        border-radius: 50%;
+                        border: 2px solid white;
+                        transform: translateY(-50%);
+                        z-index: 2;
+                    }
+
+                    .zigzag-card::after {
+                        content: "";
+                        position: absolute;
+                        top: 50%;
+                        height: 2px;
+                        background: #ffc107;
+                        transform: translateY(-50%);
+                        z-index: 1;
+                    }
+
+                    /* Positioning the dots and lines for left-aligned cards */
+                    .zigzag-left::before {
+                        left: -32px;
+                    }
+
+                    .zigzag-left::after {
+                        left: -30px;
+                        width: 25px;
+                    }
+
+                    /* Positioning the dots and lines for right-aligned cards */
+                    .zigzag-right::before {
+                        right: -32px;
+                    }
+
+                    .zigzag-right::after {
+                        right: -30px;
+                        width: 25px;
+                    }
+
+                    @media (max-width: 768px) {
+
+                        /* Hide the main vertical line */
+                        .zigzag-wrapper::before {
+                            display: none;
+                        }
+
+                        /* Hide the dots and the horizontal connector lines */
+                        .zigzag-card::before,
+                        .zigzag-card::after {
+                            display: none;
+                        }
+
+                        /* Center the cards and remove the zigzag visual on small screens */
+                        .zigzag-right,
+                        .zigzag-left {
+                            justify-content: center !important;
+                            /* Force center alignment */
+                            border-left: none;
+                            border-right: none;
+                        }
+                    }
+                </style>
+                <!-- Zigzag Card Layout -->
+                <div class="row my-5 zigzag-wrapper">
+
+                    <!-- Card 1 -->
+                    <div class="col-md-6 order-md-1 d-flex justify-content-end">
+                        <div class="card rounded zigzag-card zigzag-right" style="background:#7d3e06; width: 90%;">
+                            <div class="card-body text-center text-white">
+                                <h6 class="card-title text-uppercase" style="font-size: 1.5rem;">Visualization Specialists</h6>
+                                <p class="card-text text-warning" style="font-size: 1.25rem;">Customers visualize <br> realize solutions!</p>
+                                <a href="https://vaaptech.com/visualization" class="btn btn-outline-warning">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 order-md-2 mb-4"></div>
+
+                    <!-- Card 2 -->
+                    <div class="col-md-6 order-md-4 d-flex justify-content-start">
+                        <div class="card rounded zigzag-card zigzag-left" style="background:#4b474b; width: 90%;">
+                            <div class="card-body text-center text-white">
+                                <h6 class="card-title text-uppercase" style="font-size: 1.5rem;">VAAP Specialization</h6>
+                                <p class="card-text text-warning" style="font-size: 1.25rem;">Experience ASPECT <br> Component Solutions!</p>
+                                <a href="https://vaaptech.com/about-vaap" class="btn btn-outline-warning">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 order-md-3 mb-4"></div>
+
+                    <!-- Card 3 -->
+                    <div class="col-md-6 order-md-5 d-flex justify-content-end">
+                        <div class="card rounded zigzag-card zigzag-right" style="background:#475d24; width: 90%;">
+                            <div class="card-body text-center text-white">
+                                <h6 class="card-title text-uppercase" style="font-size: 1.5rem;">VAAP Technologies Inc.</h6>
+                                <p class="card-text text-warning" style="font-size: 1.25rem;">Business Management <br> Software Specialists!</p>
+                                <a href="https://vaaptech.com/about-vaap" class="btn btn-outline-warning">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 order-md-6 mb-4"></div>
+
+                    <!-- Card 4 -->
+                    <div class="col-md-6 order-md-8 d-flex justify-content-start">
+                        <div class="card rounded zigzag-card zigzag-left" style="background:#247083; width: 90%;">
+                            <div class="card-body text-center text-white">
+                                <h6 class="card-title text-uppercase" style="font-size: 1.5rem;">Software & Development</h6>
+                                <p class="card-text text-warning" style="font-size: 1.25rem;">An ASPECT Innovations <br> Company first of its kind!</p>
+                                <a href="https://vaaptech.com/about-vaap" class="btn btn-outline-warning">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 order-md-7 mb-4"></div>
+
+                </div>
+
+            </div>
+        </section>
+
+
+
+
+
+        <!--:::::SERVICE AREA START :::::::-->
+        <!-- <div class="service-area padding-bottom" id="service">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 align-self-center">
+                        <div class="heading white">
+                            <strong class="filltext">our services</strong>
+                            <small>WHAT WE DO</small>
+                            <h2>Bussiness <span> Solutions</span></h2>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 align-self-center">
+                         <div class="info-content">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint ratione reprehenderit, error qui enim sit ex provident </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="space-60"></div>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="single-service">
+                            <div class="service-icon">
+                                <img src="assets/img/icon/service1.svg" alt="">
+                            </div>
+                            <div class="service-text">
+                                <h4>design principales</h4>
+                                <p>Need a project completed by an expert? Let’s go! Access a Human Resources Consultant to answer questions</p>
+                            </div>
+                            <div class="circles-wrap">
+                                <div class="circles">
+                                    <span class="circle circle-1"></span>
+                                    <span class="circle circle-2"></span>
+                                    <span class="circle circle-3"></span>
+                                    <span class="circle circle-4"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="single-service active">
+                            <div class="service-icon">
+                                <img src="assets/img/icon/service2.svg" alt="">
+                            </div>
+                            <div class="service-text">
+                                <h4>Unique Values</h4>
+                                <p>Need a project completed by an expert? Let’s go! Access a Human Resources Consultant to answer questions</p>
+                            </div>
+                            <div class="circles-wrap">
+                                <div class="circles">
+                                    <span class="circle circle-1"></span>
+                                    <span class="circle circle-2"></span>
+                                    <span class="circle circle-3"></span>
+                                    <span class="circle circle-4"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="single-service">
+                            <div class="service-icon">
+                                <img src="assets/img/icon/service3.svg" alt="">
+                            </div>
+                            <div class="service-text">
+                                <h4>Style Components</h4>
+                                <p>Need a project completed by an expert? Let’s go! Access a Human Resources Consultant to answer questions</p>
+                            </div>
+                            <div class="circles-wrap">
+                                <div class="circles">
+                                    <span class="circle circle-1"></span>
+                                    <span class="circle circle-2"></span>
+                                    <span class="circle circle-3"></span>
+                                    <span class="circle circle-4"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <!--:::::SERVICE AREA END :::::::-->
+
+        <!--:::::PROJECT AREA START :::::::-->
+        <!-- <div class="project-area section-padding" >
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5 align-self-center">
+                        <div class="heading white">
+                            <strong class="filltext">our projects</strong>
+                            <small>WORKING PROCESS</small>
+                            <h2>lastet working <span>project</span></h2>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 align-self-center">
+                         <div class="info-content">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint ratione reprehenderit </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="space-60"></div>
+                <div class="row">
+                    <ul id="da-thumbs" class="da-thumbs portfolio-carousel owl-carousel">
+                        <li>
+                            <a href="portfolio.html">
+                                <img src="assets/img/project/project1.png" alt="">
+                                <div><span>Menu by Simon Jensen</span></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="portfolio.html">
+                                <img src="assets/img/project/project2.png" alt="">
+                                <div><span>Menu by Simon Jensen</span></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="portfolio.html">
+                                <img src="assets/img/project/project3.png" alt="">
+                                <div><span>Menu by Simon Jensen</span></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="portfolio.html">
+                                <img src="assets/img/project/project4.png" alt="">
+                                <div>
+                                    <span>Menu by Simon Jensen</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="portfolio.html">
+                                <img src="assets/img/project/project2.png" alt="">
+                                <div>
+                                    <span>Menu by Simon Jensen</span>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div> -->
+        <!--:::::PROJECT AREA END :::::::-->
+
+        <style type="text/css">
+	@import url(//fonts.googleapis.com/css?family=Montserrat:300,400,500);
+
+	:root{
+		--teal-light-bg: rgba(0, 92, 75, 0.56);
+	}
+
+	.service-11 {
+		font-family: "Montserrat", sans-serif;
+		color: #8d97ad;
+		font-weight: 300;
+	}
+
+	/* .service-11 h1, .service-11 h2, .service-11 h3, .service-11 h4, .service-11 h5, .service-11 h6 {
+		color: #3e4555;
+	} */
+
+	.service-11 .font-weight-medium {
+		font-weight: 500;
+		font-size: 30px;
+		color: white;
+	}
+
+	.service-11 .bg-light {
+		background-color: #f4f8fa !important;
+	}
+
+	.service-11 .subtitle {
+		color: #8d97ad;
+		line-height: 24px;
+	}
+
+	.service-11 .card1.card-shadow {
+		-webkit-box-shadow: 0px 0px 30px rgba(115, 128, 157, 0.1);
+		box-shadow: 0px 0px 30px rgba(115, 128, 157, 0.1);
+	}
+
+	.service-11 .wrap-service11-box {
+		margin-top: 60px;
+	}
+
+	.service-11 .wrap-service11-box .icon-space {
+		margin: -70px 0 20px;
+		padding: 20px;
+	}
+
+	.service-11 .wrap-service11-box .icon-space .icon-round {
+		font-size: 45px;
+		color: #ffffff;
+	}
+
+	.service-11 .bg-success-gradiant {
+		background: #2cdd9b;
+		background: -webkit-linear-gradient(legacy-direction(to right), #2cdd9b 0%, #1dc8cc 100%);
+		background: -webkit-gradient(linear, left top, right top, from(#2cdd9b), to(#1dc8cc));
+		background: -webkit-linear-gradient(left, #2cdd9b 0%, #1dc8cc 100%);
+		background: -o-linear-gradient(left, #2cdd9b 0%, #1dc8cc 100%);
+		background: linear-gradient(to right, #2cdd9b 0%, #1dc8cc 100%);
+		background: #f06060;
+	}
+
+	.service-11 .icon-round {
+		width: 120px;
+		line-height: 80px;
+		height: 120px;
+		padding: 12px;
+		color: #ffffff;
+	}
+
+	.service-11 .btn-success-gradiant {
+
+		background: #ffffff;
+	}
+
+	.service-11 .btn-success-gradiant:hover {
+		background: #1dc8cc;
+	}
+
+	.service-11 .btn-md {
+		padding: 15px 45px;
+		font-size: 16px;
+	}
+
+	.card1 {
+		background: #2736438a;
+	}
+
+	.service-11 .bg-success-gradiant {
+		background: #fff;
+	}
+
+	.svDiv {
+		margin-left: 100px;
+		margin-right: 100px;
+	}
+
+	@media only screen and (max-width:991px) {
+		.svDiv {
+			margin-left: 0px;
+			margin-right: 0px;
+		}
+	}
+
+	.wrap-service11-box {
+		text-align: center !important;
+	}
+
+
+.service-11 {
+    position: relative; /* Ensures the overlay is positioned relative to this container */
+}
+
+.service-11 .title-overlay {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--teal-light-bg); /* Teal Overlay color */
+    z-index: 1; /* Ensures the overlay is below content */
+}
+
+.service-11 .svDiv {
+    position: relative;
+    z-index: 2; /* Content will be above the overlay */
+    padding: 2rem; /* Optional padding for better spacing */
+}
+
+.service-11 .container {
+    position: relative; /* To prevent the overlay from affecting content */
+    z-index: 2; /* Ensures content is above the overlay */
+}
+
+.text-muted {
+    color: white !important;
+}
+
+/* Optional styling adjustments */
+.cbtn {
+    padding: 10px 30px;
+    background-color: #28a745;
+    color: white;
+    text-decoration: none;
+}
+
+.cbtn:hover {
+    background-color: #218838;
+}
+
+.service-11 .row{
+	justify-content: start !important;
+}
+
+
+
+</style>
+
+<div class="bg-light py-0 service-11" style="background: url(https://vaaptech.com/assets/img/gallery/getstarted.png);overflow: hidden; background-size: cover;background-repeat: no-repeat; background-position: center; position: relative;">
+	<div class="title-overlay"></div>
+	<!-- <div class="" style="margin-left:100px;margin-right: 100px;"> -->
+	<div class="svDiv">
+		<!-- <div class="row">
+			<div class="col-xl-12">
+				<div class="text-center mb-55  fadeInUp " data-wow-duration="1s" data-wow-delay=".1s">
+					<h3 class="sec-heading text-white bottomborder py-5">GET STARTED</h3>
+					<p style="color:white;">Three Easy Steps to Explore VAAP Software</p>
+				</div>
+			</div>
+		</div> -->
+		<div class="mb-55 about-vaap-container" style=" padding: 25px 0px;">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-6 align-self-center">
+						<div class="heading white">
+							<strong class="filltext">GET STARTED</strong>
+							<!-- <small>WHAT WE DO</small> -->
+							<h2>GET <span> STARTED</span></h2>
+						</div>
+					</div>
+					<!-- <div class="col-lg-6 align-self-center">
+						<div class="info-content">
+							<p>Three Easy Steps to Explore VAAP Software.</p>
+						</div>
+					</div> -->
+				</div>
+			</div>
+		</div>
+		<!-- Previous Row  -->
+		<!-- <div class="row">
+			
+			<div class="col-md-4 wrap-service11-box">
+				<div class="card1 card-shadow border-0 mb-4">
+					<div class="p-4">
+						<div class="icon-space mx-auto">
+							<div class="icon-round text-center d-inline-block rounded-circle bg-success-gradiant"><img src="https://vaaptech.com/assets/img/icon/tv.png"></div>
+						</div>
+						<h6 class="font-weight-medium">VISUALIZE</h6>
+						<p class="mt-3">Simply visualize your business & user needs.</p>
+					</div>
+				</div>
+			</div>
+			
+			<div class="col-md-4 wrap-service11-box">
+				<div class="card1 card-shadow border-0 mb-4">
+					<div class="p-4">
+						<div class="icon-space">
+							<div class="icon-round text-center d-inline-block rounded-circle bg-success-gradiant"><img src="https://vaaptech.com/assets/img/icon/settings.png"></div>
+						</div>
+						<h6 class="font-weight-medium">CONFIGURE</h6>
+						<p class="mt-3">Configures / Customizes Portals and Mobile Apps.</p>
+					</div>
+				</div>
+			</div>
+			
+			<div class="col-md-4 wrap-service11-box">
+				<div class="card1 card-shadow border-0 mb-4">
+					<div class="p-4">
+						<div class="icon-space">
+							<div class="icon-round text-center d-inline-block rounded-circle bg-success-gradiant"><img src="https://vaaptech.com/assets/img/icon/live.png"></div>
+						</div>
+						<h6 class="font-weight-medium">GO LIVE</h6>
+						<p class="mt-3">Customers go live on our secured SaaS Platform.</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-12 mt-3 text-center py-5">
+				<p style="color:white;">Simply visualize your business & user needs</p>
+				<a class="card-btn btn-success text-white border-1 btn-md" href="explore"><span>Explore</span></a>
+			</div>
+		</div> -->
+		<!-- Current Row -->
+		<style>
+			.icon-round-small {
+				width: 50px;
+				height: 50px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				flex-shrink: 0; /* Prevents the icon from shrinking */
+			}
+
+			.icon-round-small img {
+				max-width: 25px; /* Adjust icon size inside the circle */
+				height: auto;
+			}
+			
+			/* Assuming you have a gradient class like this from your old code */
+			.bg-success-gradiant {
+				background: #28a745; /* Fallback */
+				background: linear-gradient(to right, #28a745, #218838);
+			}
+
+			.mr-3 {
+				margin-right: 1rem !important;
+			}
+
+			.get-start{
+				margin-top: 30px !important;
+			}
+		</style>
+		 <div class="container py-3">
+			<div class="row align-items-center" style="gap: 60px ;">
+
+				<div class="col-lg-6 col-md-12">
+
+					<p class="text-muted" style="color: white !important;">
+						Discover a seamless way to manage your operations, engage with your clients, and drive growth. Our platform is meticulously engineered to provide robust performance, intuitive design, and unparalleled flexibility, allowing you to focus on what truly matters: building your business.
+					</p>
+
+					<ul class="list-unstyled mt-4" style="line-height: 2;">
+						<li style="color: white !important;"><i class="fas fa-check-circle text-success mr-2"></i><strong>Streamlined Workflow:</strong> Automate repetitive tasks and increase efficiency.</li>
+						<li style="color: white !important;"><i class="fas fa-check-circle text-success mr-2"></i><strong>Actionable Insights:</strong> Make data-driven decisions with our advanced analytics.</li>
+						<li style="color: white !important;"><i class="fas fa-check-circle text-success mr-2"></i><strong>Secure & Scalable:</strong> Built on a rock-solid infrastructure that grows with you.</li>
+					</ul>
+
+					<!-- <a href="explore" class="cbtn cbnt1 fadeInDown animated mt-5">Get Started <i class="fal fa-angle-right"></i></a> -->
+
+					<a href="explore" class="animated-button1 loader get-start" style="border: 1px solid white;">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                GET STARTED<i class="fal fa-angle-right"></i>
+								</a>
+				</div>
+
+				<!-- <div class="col-lg-5 col-md-12 text-center mt-lg-0">
+					<img src="https://vaaptech.com/assets/img/backgrounds/get-started2.png" class="img-fluid rounded shadow-lg" style="width: 400px !important;" alt="Getting Started Illustration">
+				</div> -->
+
+			</div>
+		</div>
+	</div>
+</div>        <style>
+            .testimonial {
+                padding-left: 0px !important;
+            }
+
+            .testimonials-area1 {
+                padding: 80px 20px;
+            }
+        </style>
+
+        <!--:::::TESTIMONIALS AREA START :::::::-->
+        <div class="testimonials-area testimonials-area1 section-padding">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 align-self-center">
+                        <div class="heading white">
+                            <!-- <strong class="filltext">Testimonials</strong> -->
+                            <small>Testimonials</small>
+                            <h2>What Our Clients <span>Says</span></h2>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 m-auto">
+                        <div class="testimonials owl-carousel">
+                            <div class="testimonial">
+                                <div class="info-content testimonial-text">
+                                    <p>Working with this team transformed our digital presence. They delivered ahead of schedule and the quality exceeded expectations.</p>
+                                    <p style="font-weight: bold;">– Sarah Williams</p>
+                                </div>
+                            </div>
+
+                            <div class="testimonial">
+                                <div class="info-content testimonial-text">
+                                    <p>Their innovative approach and attention to detail helped us streamline operations and reach new customers effortlessly.</p>
+                                    <p style="font-weight: bold;">– Rajesh Kumar</p>
+                                </div>
+                            </div>
+
+                            <div class="testimonial">
+                                <div class="info-content testimonial-text">
+                                    <p>Professional, reliable, and always ready with fresh ideas. Partnering with them has been one of our best business decisions.</p>
+                                    <p style="font-weight: bold;">– Emily Johnson</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="col-lg-5 align-self-center">
+                        <div class="info-content">
+                            <p>Hear from our satisfied clients about how our solutions have made a difference in their lives and businesses. Real stories, real success, real trust! </p>
+                        </div>
+                    </div> -->
+                </div>
+                <script>
+                    $(document).on("click", ".owl-prev", function() {
+                        console.log("⬅️ Prev button clicked!");
+                    });
+
+                    $(document).on("click", ".owl-next", function() {
+                        console.log("➡️ Next button clicked!");
+                    });
+                </script>
+                <!-- <div class="space-60"></div> -->
+                <!-- <div class="row"> -->
+                <!-- <div class="col-lg-10 m-auto">
+                        <div class="testimonials owl-carousel">
+                            <div class="testimonial">
+                                <div class="testimonial-img animated fadeInLeft">
+                                    <img src="assets/img/author/testimonial1.jpg" alt="">
+                                </div>
+                                <div class="testimonial-text animated fadeInDown">
+                                    <img src="assets/img/icon/quote.png" alt="">
+                                    <h4>Gilroy is a great and super-professional service provider, which brought new technologes, new methodology, and a fresh perspective to our project</h4>
+                                    <p>Jack Metiyo Shina.</p>
+                                </div>
+                            </div>
+                            <div class="testimonial">
+                                <div class="testimonial-img">
+                                    <img src="assets/img/author/testimonial1.jpg" alt="">
+                                </div>
+                                <div class="testimonial-text">
+                                    <img src="assets/img/icon/quote.png" alt="">
+                                    <h4>Gilroy is a great and super-professional service provider, which brought new technologes, new methodology, and a fresh perspective to our project</h4>
+                                    <p>Jack Metiyo Shina.</p>
+                                </div>
+                            </div>
+                            <div class="testimonial">
+                                <div class="testimonial-img">
+                                    <img src="assets/img/author/testimonial1.jpg" alt="">
+                                </div>
+                                <div class="testimonial-text">
+                                    <img src="assets/img/icon/quote.png" alt="">
+                                    <h4>Gilroy is a great and super-professional service provider, which brought new technologes, new methodology, and a fresh perspective to our project</h4>
+                                    <p>Jack Metiyo Shina.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                <!-- </div> -->
+            </div>
+        </div>
+        <!--:::::TESTIMONIALS AREA END :::::::-->
+
+        <!--:::::PRICING AREA START :::::::-->
+        <!-- <div class="pricing-area pricing-area1 section-padding" id="price">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 align-self-center">
+                        <div class="heading white">
+                            <strong class="filltext">payment</strong>
+                            <small>SPECIFICATIONS</small>
+                            <h2>All OUR PAYMENT <span>options</span></h2>
+                        </div>
+                    </div>
+                     <div class="col-lg-6 align-self-center">
+                         <div class="info-content">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint ratione reprehenderit </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="space-60"></div>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="single-service">
+                            <div class="service-icon">
+                                <img src="assets/img/icon/service1.svg" alt="">
+                            </div>
+                            <div class="service-text">
+                                <h3>Influencer</h3>
+                                <h5>best for small investors</h5>
+                            </div>
+                            <div class="separator"></div>
+                             <div class="service-text">
+                                <h3>$104</h3>
+                                <h5>Per month</h5>
+                            </div>
+
+                            <a href="#" class="cbtn pricing-btn">read more <i class="fal fa-angle-right"></i></a>
+                            <div class="circles-wrap">
+                                <div class="circles">
+                                    <span class="circle circle-1"></span>
+                                    <span class="circle circle-2"></span>
+                                    <span class="circle circle-3"></span>
+                                    <span class="circle circle-4"></span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="single-service active">
+                            <div class="service-icon">
+                                <img src="assets/img/icon/service2.svg" alt="">
+                            </div>
+                            <div class="service-text">
+                                <h3>AGENCY</h3>
+                                <h5>best for small investors</h5>
+                            </div>
+                            <div class="separator"></div>
+                             <div class="service-text">
+                                <h3>$204</h3>
+                                <h5>Per month</h5>
+                            </div>
+                            <a href="#" class="cbtn pricing-btn">read more <i class="fal fa-angle-right"></i></a>
+                            <div class="circles-wrap">
+                                <div class="circles">
+                                    <span class="circle circle-1"></span>
+                                    <span class="circle circle-2"></span>
+                                    <span class="circle circle-3"></span>
+                                    <span class="circle circle-4"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="single-service">
+                            <div class="service-icon">
+                                <img src="assets/img/icon/service3.svg" alt="">
+                            </div>
+                            <div class="service-text">
+                                <h3>ENTERPRISE</h3>
+                                <h5>best for small investors</h5>
+                            </div>
+                            <div class="separator"></div>
+                             <div class="service-text">
+                                <h3>Let’s chart</h3>
+                                <h5>Per month</h5>
+                            </div>
+                            
+                            <a href="#" class="cbtn pricing-btn">read more <i class="fal fa-angle-right"></i></a>
+                            <div class="circles-wrap">
+                                <div class="circles">
+                                    <span class="circle circle-1"></span>
+                                    <span class="circle circle-2"></span>
+                                    <span class="circle circle-3"></span>
+                                    <span class="circle circle-4"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>  -->
+        <!--:::::PRICING AREA END :::::::-->
+
+        <!--:::::BLOG AREA START :::::::-->
+        <!-- <div class="blog-area padding-top" id="blog">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5 align-self-center">
+                        <div class="heading white">
+                            <strong class="filltext">news & blog</strong>
+                            <small>RECENT NEWS DESK</small>
+                            <h2>lastet news & <span>blogs</span></h2>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 align-self-center">
+                         <div class="info-content">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint ratione reprehenderit </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="space-60"></div> 
+                <div class="row">
+                    <div class="blogs owl-carousel">
+                        <div class="single-blog">
+                            <div class="single-blog-img">
+                               <img src="assets/img/blog/team__1.png" alt="">
+                            </div>
+                            <div class="blog-description">
+                                <p>September 28, 2019</p>
+                                <a href="single-blog.html">Hypnosis 12 Steps To Acquire Mind Power...</a>
+                                <a href="single-blog.html" class="readmore-btn"><i class="fal fa-arrow-right"></i> read more</a>
+                            </div>
+                           
+                        </div>
+                        <div class="single-blog">
+                            <div class="single-blog-img">
+                               <div class="single-blog-img">
+                                   <img src="assets/img/blog/team__2.png" alt="">
+                                </div>
+                            </div>
+                            <div class="blog-description">
+                                <p>September 28, 2019</p>
+                                <a href="single-blog.html">Addiction When Gambling Becomes...</a>
+                                <a href="single-blog.html" class="readmore-btn"><i class="fal fa-arrow-right"></i> read more</a>
+                            </div>
+                           
+                        </div>
+                        <div class="single-blog">
+                            <div class="single-blog-img">
+                               <div class="single-blog-img">
+                                   <img src="assets/img/blog/team__3.png" alt="">
+                                </div>
+                            </div>
+                            <div class="blog-description">
+                                <p>September 28, 2019</p>
+                                <a href="single-blog.html">Harness The Power Of Your Dreams...</a>
+                                <a href="single-blog.html" class="readmore-btn"><i class="fal fa-arrow-right"></i> read more</a>
+                            </div>
+                           
+                        </div>
+                        <div class="single-blog">
+                            <div class="single-blog-img">
+                               <div class="single-blog-img">
+                                   <img src="assets/img/blog/team__4.png" alt="">
+                                </div>
+                            </div>
+                            <div class="blog-description">
+                                <p>September 28, 2019</p>
+                                <a href="single-blog.html">Addiction When Gambling Becomes...</a>
+                                <a href="single-blog.html" class="readmore-btn"><i class="fal fa-arrow-right"></i> read more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <!--:::::BLOG AREA END :::::::-->
+
+
+        <!--:::::CALL TO ACTION AREA START :::::::-->
+        <!-- <div class="cta-area cta-area1 padding-top" id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 m-auto text-center">
+                     <div class="heading cta-heading white">
+                        <small>Newsletter</small>
+                        <div class="space-20"></div>
+                        <h2>Stay up to date, subscribe to the free <span>newsletter !</span></h2>
+                    </div>
+                    <div class="space-40"></div>
+                    <div class="cta-form">
+                        <form action="#">
+                            <input type="email" placeholder="Enter Your Email..">
+                            <a href="#" class="subscribe-btn">subscribe <i class="fal fa-comments-alt"></i></a>
+                        </form>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <!--:::::CALL TO ACTION AREA END :::::::-->
+
+        <!--:::::FOOTER AREA START :::::::-->
+        <!-- <div class="footer-area footer-area1 section-padding"> -->
+        <!--:::::LOGO AREA START :::::::-->
+        <!-- <div class="logo-carousel">
+            <div class="container">
+                <div class="row">
+                    <div class="logos owl-carousel">
+                        <div class="single-logo-table">
+                            <div class="single-logo-table-cell">
+                               <img src="assets/img/logo/1.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="single-logo-table">
+                            <div class="single-logo-table-cell">
+                                <img src="assets/img/logo/01.png" alt="">
+                            </div>
+                        </div>
+                        <div class="single-logo-table">
+                            <div class="single-logo-table-cell">
+                                <img src="assets/img/logo/02.png" alt="">
+                            </div>
+                        </div>
+                        <div class="single-logo-table">
+                            <div class="single-logo-table-cell">
+                                <img src="assets/img/logo/03.png" alt="">
+                            </div>
+                        </div>
+                        <div class="single-logo-table">
+                            <div class="single-logo-table-cell">
+                                <img src="assets/img/logo/04.png" alt="">
+                            </div>
+                        </div>
+                        <div class="single-logo-table">
+                            <div class="single-logo-table-cell">
+                                <img src="assets/img/logo/02.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <!-- <div class="space-100"></div> -->
+        <!--:::::LOGO AREA END :::::::-->
+        <!-- <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 m-auto text-center">
+                        <div class="footer-menu">
+                            <ul>
+                                <li><a href="#">about me</a></li>
+                                <li><a href="#">career</a></li>
+                                <li><a href="#">blog</a></li>
+                                <li><a href="#">gallery</a></li>
+                                <li><a href="#">contact me</a></li>
+                            </ul>
+                        </div>
+                        <div class="space-40"></div>
+                        <div class="copyright">
+                            <p>Copyright © 2019 by <span> QuomodoTheme </span> all right reserved</p>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+        <!-- </div> -->
+        <!--:::::FOOTER AREA END :::::::-->
+
+
+
+
+        
+<style>
+	.dark-button {
+    background: none;
+    color: white;
+    border: 1px solid white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+  }
+
+  .dark-button:hover {
+    background: white;
+    color: black;
+  }
+
+  @media (max-width: 767px) {
+	.footer-divider{
+		display: none !important;
+	}
+  }
+
+</style>
+
+<!-- footer -->
+<footer class="position-relative" style="background: #211f24;">
+	<img src="https://vaaptech.com/assets/img/backgrounds/map.png" class="img-fluid overlay-image" alt="">
+	<div class="section">
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-md-3 col-6">
+				<a href="https://vaaptech.com/" class="logo"><img src="assets/img/logo/logo.png" alt=""></a>
+				</div>
+				<div class="col-md-3 col-6">
+					<h4 class="text-white mb-5">About</h4>
+					<ul class="list-unstyled">
+						<li><a href="https://vaaptech.com/about-vaap" class="text-light d-block mb-3">About VAAP</a></li>
+						<li><a href="https://vaaptech.com/technology-solutions" class="text-light d-block mb-3">Technology Solutions</a></li>
+						<li><a href="https://vaaptech.com/temple-solutions" class="text-light d-block mb-3">Temple Solutions</a></li>
+						<li><a href="https://vaaptech.com/market-solutions" class="text-light d-block mb-3">Market Solutions</a></li>
+						<li><a href="https://vaaptech.com/business-solution" class="text-light d-block mb-3">Business Solution</a></li>
+
+					</ul>
+				</div>
+				<div class="col-md-3 col-6">
+					<h4 class="text-white mb-5">Privacy & Security</h4>
+					<ul class="list-unstyled">
+						<li><a href="https://vaaptech.com/term-of-use" class="text-light d-block mb-3">Terms Of Use</a></li>
+						<li><a href="https://vaaptech.com/privacy-policy" class="text-light d-block mb-3">Privacy Policy</a></li>
+						<li><a href="https://vaaptech.com/security" class="text-light d-block mb-3">Security</a></li>
+						<li><a href="https://vaaptech.com/faqs" class="text-light d-block mb-3">FAQs</a></li>
+						<li><a href="https://vaaptech.com/why-vaap" class="text-light d-block mb-3">Why VAAP</a></li>
+					</ul>
+				</div>
+				<div class="col-md-3 col-6">
+				<div class="footer-divider" style="border-style: solid; border-width: -7px 2px 2px 2px; border-color: #ffffffa3; box-shadow: 0px 0px 10px 0px rgb(216 16 16 / 21%); transform: rotate(102deg); margin: -144px -247px; width: 351px; margin-top: 127px;">
+                  </div>
+					<h4 class="text-white mb-5">Contact Us</h4>
+					<ul class="list-unstyled">
+						<!-- <li class="mt-4"><a href="https://vaaptech.com/front_assets/vaap-kiosk-apk/VAAPKIOSK_1.0.03.apk" download="">
+							<img src="https://vaaptech.com/assets/img/logo/google-play.png" height="auto" width="120px">
+						</a></li>
+						<li class="mt-4"><a href="javascript:void(0)" style="padding-left: 5px;">
+							<img src="https://vaaptech.com/assets/img/logo/app-store.png" height="auto" width="120px">
+						</a></li> -->
+
+        <!-- Email -->
+        <!-- <li class="mt-4">
+            <p class="text-white">
+                <strong>Email:</strong> 
+                <a href="mailto:info@vaap.com" class="text-warning" style="text-decoration: none;">
+                    info@vaap.com
+                </a>
+            </p>
+        </li> -->
+
+        <!-- Phone Number -->
+        <!-- <li class="mt-4">
+            <p class="text-white">
+                <strong>Phone:</strong> 
+                <a href="tel:+1234567890" class="text-warning" style="text-decoration: none;">
+                    +1 234-567-890
+                </a>
+            </p>
+        </li> -->
+						<li class="mt-3">
+							<p class="text-white">Open: Mon – Fri : 8 AM – 6 PM EST<br>
+							Closed: Saturday / Sunday / Holidays</p>
+						</li>
+
+        <!-- Email -->
+        <!-- <li class="mt-4">
+            <p class="text-white">
+                <strong>Email:</strong> 
+                <a href="mailto:info@vaap.com" class="text-warning" style="text-decoration: none;">
+                    info@vaap.com
+                </a>
+            </p>
+        </li> -->
+
+        <!-- Phone Number -->
+        <!-- <li class="mt-4">
+            <p class="text-white">
+                <strong>Phone:</strong> 
+                <a href="tel:+1234567890" class="text-warning" style="text-decoration: none;">
+                    +1 234-567-890
+                </a>
+            </p>
+        </li> -->
+					</ul>
+					<button class="dark-button" onclick="location.href='https://vaaptech.com/contact-us'">Get In Touch</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div style="background: #2E3D44;">
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-md-6 text-center text-md-left">
+					<p class="text-light mb-0" style= "color: white !important;">Copyright &copy; <a class="" style="color:#b7b8f1;" href="https://vaaptech.com/">vaaptech.com</a> 2025 All rights reserved.
+					</p>
+				</div>
+				<div class="col-md-6">
+					<ul class="list-inline text-md-right text-center d-flex mb-0">
+					<li class="list-inline-item"><a class="d-block text-white" href="https://vaaptech.com/" style="color: white !important;font-size:14px;">COPYRIGHT</a></li>
+					<li class="list-inline-item"><a class="d-block text-white" href="https://vaaptech.com/term-of-use" style="color: white !important;font-size:14px;"> | TERMS  OF USE</a></li>
+					<li class="list-inline-item"><a class="d-block text-white" href="https://vaaptech.com/privacy-policy" style="color: white !important;font-size:14px;"> | PRIVACY POLICY</a></li>
+					<li class="list-inline-item"><a class="d-block text-white" href="https://vaaptech.com/security" style="color: white !important;font-size:14px;"> | SECURITY</a></li>
+					<!-- <li class="list-inline-item"><a class="d-block p-3 text-white" href="#" style="color: white !important;">COPYRIGHT | TERMS  OF USE | PRIVACY POLICY | SECURITY</a></li> -->
+
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+<!-- /footer -->        
+    <!--:::::jquery 3.2.1 js :::::::-->
+    <script src="https://vaaptech.com/assets/js/plugins/jQuery.2.1.0.min.js"></script>
+    <script src="https://vaaptech.com/assets/js/plugins/bootstrap.min.js"></script>
+    <script src="https://vaaptech.com/assets/js/plugins/jquery.nav.js"></script>
+    <script src="https://vaaptech.com/assets/js/plugins/jquery.waypoints.min.js"></script>
+    <script src="https://vaaptech.com/assets/js/plugins/jquery-modal-video.min.js"></script>
+    <script src="https://vaaptech.com/assets/js/plugins/stellarnav.js"></script>
+    <script src="https://vaaptech.com/assets/js/plugins/popper.min.js"></script>
+    <script src="https://vaaptech.com/assets/js/plugins/owl.carousel.js"></script>
+    <script src="https://vaaptech.com/assets/js/plugins/wow.min.js"></script>
+    <script src="https://vaaptech.com/assets/plugins/venobox/venobox.min.js"></script>
+
+    <script src="https://vaaptech.com/assets/js/plugins/easypiechart.min.js"></script>
+    <script src="https://vaaptech.com/assets/js/plugins/animatenumber.min.js"></script>
+    <script src="https://vaaptech.com/assets/js/plugins/circle-progress.js"></script>
+    <script src="https://vaaptech.com/assets/js/plugins/bars.js"></script>
+    <script src="https://vaaptech.com/assets/js/plugins/appear.js"></script>
+    <script src="https://vaaptech.com/assets/js/plugins/jquery.hoverdir.js"></script>
+    <script src="https://vaaptech.com/assets/js/plugins/isotop.v3.0.4.min.js"></script>
+    <script src="https://vaaptech.com/assets/js/main.js"></script>
+
+    
+
+
+<!-- Main Script -->
+<script src="https://vaaptech.com/assets/js/script.js"></script>
+
+</body>
+
+</html>        <script>
+            // Select all the service cards on the page
+            const serviceCards = document.querySelectorAll('.single-service');
+
+            // Add a mousemove event listener to each card
+            serviceCards.forEach(card => {
+                card.addEventListener('mousemove', (e) => {
+                    // Get the position of the card itself
+                    const rect = card.getBoundingClientRect();
+
+                    // Calculate the mouse position relative to the card's top-left corner
+                    const x = e.clientX - rect.left;
+                    const y = e.clientY - rect.top;
+
+                    // Update the CSS variables on the card
+                    card.style.setProperty('--mouse-x', `${x}px`);
+                    card.style.setProperty('--mouse-y', `${y}px`);
+                });
+            });
+        </script>
+</body>
+<!--body end-->
+
+
+</html>
+<!--html end-->
